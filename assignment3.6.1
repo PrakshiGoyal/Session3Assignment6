@@ -1,0 +1,25 @@
+It is possible to overload methods with the same return type as long as the number of parameters differ in each method.
+
+for eg:
+class Acad
+{
+public static void main(string args[])
+{
+int a=5,b=2,c=7;
+Acad obj=new Acad();
+obj.sum(a,b);
+obj.sum(a,b,c);
+}
+
+void sum(int a,int b)
+{
+System.out.pintln(a+b);
+}
+
+void sum(int a,int b,int c)
+{
+System.out.println(a+b+c);
+}
+}
+
+here return type of method sum() has the same return type that is int.
